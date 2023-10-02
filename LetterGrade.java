@@ -2,35 +2,35 @@ import java.util.Scanner;
 
 public class LetterGrade {
     public static void main(String[] args) {
-        char letterGrade;
+        String letterGrade;
         System.out.println("Please enter your grade:");
         Scanner scan = new Scanner(System.in);
         int grade = scan.nextInt();
 
         if (grade >= 90) {
-            letterGrade = 'A';
+            letterGrade = "A";
             if (grade >= 97) {
-                letterGrade = 'A';
+                letterGrade += "+";
             }
         } else if (grade >= 80) {
-            letterGrade = 'B';
+            letterGrade = "B";
             if (grade >= 87) {
-                letterGrade = 'B';
+                letterGrade += "+";
             }
         } else if (grade >= 70) {
-            letterGrade = 'C';
+            letterGrade = "C";
             if (grade >= 77) {
-                letterGrade = 'C';
+                letterGrade += "+";
             }
         } else if (grade >= 60) {
-            letterGrade = 'D';
+            letterGrade = "D";
             if (grade >= 67) {
-                letterGrade = 'D';
+                letterGrade += "+";
             }
         } else {
-            letterGrade = 'F';
+            letterGrade = "F";
         }
 
-        System.out.println("Your Grade is : " + letterGrade + ((grade % 10 >= 7) ? "+" : ""));
+        System.out.println("Your Grade is : " + letterGrade);
     }
 }
