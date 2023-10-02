@@ -1,5 +1,5 @@
+// Author : Shaik Arbaz Rasheed
 import java.util.Scanner;
-
 public class LetterGrade {
     public static void main(String[] args) {
         String letterGrade;
